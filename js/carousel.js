@@ -24,7 +24,9 @@ function moveToPrevSlide() {
 
   //check for position 0
   if (slidePosition === 0) {
-    slides[totalSlides] - 1;
+    slidePosition = totalSlides - 1;
+  } else {
+    slidePosition--;
   }
   slides[slidePosition].classList.add("carousel-item-visible");
 }
